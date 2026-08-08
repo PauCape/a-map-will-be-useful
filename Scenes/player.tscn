@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dokh5a7evt4n7" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://be1n5sjscxsnb" path="res://Assets/Player/red_character.png" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://c3idtdacqe27x" path="res://Assets/Imagenes_chustas/Cono_luz.png" id="2_6t5aa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cg6o3"]
 radius = 23.021729
@@ -9,6 +10,15 @@ radius = 23.021729
 [node name="Node2D" type="CharacterBody2D" unique_id=194931162]
 motion_mode = 1
 script = ExtResource("1_cvnsp")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=2011805195]
+scale = Vector2(1.025, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="Node2D" unique_id=124251821]
+position = Vector2(0.97560984, 221.00002)
+scale = Vector2(0.5194219, 0.5185185)
+shadow_enabled = true
+texture = ExtResource("2_6t5aa")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=941526004]
 texture_filter = 1
