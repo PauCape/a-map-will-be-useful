@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://buadn2o00hh2m" path="res://Tile Set/Mapa-Base.tres" id="1_cvgc8"]
 [ext_resource type="Texture2D" uid="uid://bthowbpktbhl0" path="res://Assets/Imagenes_chustas/Cuadrado_Blanco.png" id="1_sq1f4"]
 [ext_resource type="PackedScene" uid="uid://b7siv2kt8xglh" path="res://Scenes/player.tscn" id="3_2b12q"]
+[ext_resource type="Texture2D" uid="uid://cbyqwd5jyaj5p" path="res://Assets/Imagenes_chustas/Cuadrado_Rojo.png" id="4_8y0pt"]
 
 [node name="Node2D2" type="Node2D" unique_id=1393286268]
 
@@ -16,7 +17,13 @@ tile_map_data = PackedByteArray("AAABAAAABAAEAAkAAAACAAAABAAEAAkAAAADAAAABAAEAAk
 tile_set = ExtResource("1_cvgc8")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1741256016]
+visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Node2D" parent="." unique_id=194931162 instance=ExtResource("3_2b12q")]
 position = Vector2(94, 99)
+
+[node name="CuadradoRojo" type="Sprite2D" parent="." unique_id=1301092599]
+position = Vector2(736, 862.00006)
+scale = Vector2(0.11481482, 0.11481482)
+texture = ExtResource("4_8y0pt")
