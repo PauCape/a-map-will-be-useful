@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://dq5ax5w7jrmf7"]
+[gd_resource type="TileSet" format=3 uid="uid://d1shpibpjdxcx"]
 
-[ext_resource type="Texture2D" uid="uid://bw4y75qlc5o4x" path="res://Assets/tilesheet.png" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://bw4y75qlc5o4x" path="res://Assets/tilesheet.png" id="1_xlntx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jjgbg"]
-texture = ExtResource("1_jjgbg")
+texture = ExtResource("1_xlntx")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:1/0 = 0
@@ -142,10 +142,6 @@ texture_region_size = Vector2i(64, 64)
 0:9/0 = 0
 0:8/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_ijc6r"]
+[resource]
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_jjgbg")
-
-[node name="Main" type="TileMapLayer" unique_id=1811885757]
-texture_filter = 1
-tile_set = SubResource("TileSet_ijc6r")
