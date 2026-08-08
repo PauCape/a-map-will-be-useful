@@ -17,7 +17,6 @@ tile_map_data = PackedByteArray("AAABAAAABAAEAAkAAAACAAAABAAEAAkAAAADAAAABAAEAAk
 tile_set = ExtResource("1_cvgc8")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1741256016]
-visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Node2D" parent="." unique_id=194931162 instance=ExtResource("3_2b12q")]
