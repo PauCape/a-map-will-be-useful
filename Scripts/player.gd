@@ -4,8 +4,6 @@ const SPEED = 300.0
 
 @onready var vision_light: PointLight2D = $PointLight2D
 
-var facing_direction := Vector2.RIGHT
-
 
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_vector(
@@ -17,11 +15,11 @@ func _physics_process(delta: float) -> void:
 
 	if direction:
 		velocity = direction * SPEED
-		facing_direction = direction
-
-		# Dirección del cono corregida
-		vision_light.rotation = facing_direction.angle() - PI*1/2
 	else:
 		velocity = Vector2.ZERO
+
+	var mouse_direction := get_global_mouse_position() - global_position
+
+	vision_light.rotation = mouse_direction.angle() + PI*3/2
 
 	move_and_slide()
