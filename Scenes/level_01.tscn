@@ -1,0 +1,8 @@
+[gd_scene format=4 uid="uid://dly1uok5j4okn"]
+
+[ext_resource type="TileSet" uid="uid://buadn2o00hh2m" path="res://Tile Set/Mapa-Base.tres" id="1_f6slu"]
+
+[node name="Level 01" type="TileMapLayer" unique_id=1441415849]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAAAAgAAAAAAAAAAAAEAAgAAAAAAAAABAAEAAgAAAAAAAAACAAEAAgAAAAAAAAADAAEAAgACAAAAAAADAAAAAgACAAAAAAACAAAAAgAAAAAAAAABAAAAAgAAAAAAAAADAAIAAgACAAAAAAA=")
+tile_set = ExtResource("1_f6slu")
