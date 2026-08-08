@@ -18,9 +18,9 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity = direction * SPEED
 		facing_direction = direction
-		
-		# Apunta la luz en la dirección del movimiento
-		vision_light.rotation = facing_direction.angle()
+
+		# Dirección del cono corregida
+		vision_light.rotation = facing_direction.angle() - PI*1/2
 	else:
 		velocity = Vector2.ZERO
 

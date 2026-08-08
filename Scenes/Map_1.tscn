@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bthowbpktbhl0" path="res://Assets/Imagenes_chustas/Cuadrado_Blanco.png" id="1_sq1f4"]
 [ext_resource type="PackedScene" uid="uid://b7siv2kt8xglh" path="res://Scenes/player.tscn" id="3_2b12q"]
 
-[node name="Node2D" type="Node2D" unique_id=1393286268]
+[node name="Node2D2" type="Node2D" unique_id=1393286268]
 
 [node name="CuadradoBlanco" type="Sprite2D" parent="." unique_id=1947764051]
 position = Vector2(732, 986.5)
